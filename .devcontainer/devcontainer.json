@@ -1,0 +1,41 @@
+{
+    "name": "lca-lc-foundations",
+    "image": "mcr.microsoft.com/devcontainers/python:3.13",
+    "workspaceFolder": "/workspaces/lca-lc-foundations",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/lca-lc-foundations,type=bind,consistency=cached",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-toolsai.jupyter",
+                "ms-python.isort",
+                "ms-python.flake8",
+                "ms-python.black-formatter",
+                "oderwat.indent-rainbow",
+                "kevinrose.vsc-python-indent"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "python.defaultInterpreterPath": ".venv/bin/python",
+                "python.selectInterpreter": ".venv/bin/python",
+                "python.terminal.activateEnvironment": true,
+                "python.terminal.activateEnvInCurrentTerminal": true,
+                "python-envs.pythonProjects": [],
+                "[python]": {
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": "explicit"
+                    },
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true,
+                    "editor.rulers": [88, 120]
+                },
+                "telemetry.feedback.enabled": false
+            }
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers-extra/features/uv:1": {}
+    },
+    "postCreateCommand": "uv sync"
+}
