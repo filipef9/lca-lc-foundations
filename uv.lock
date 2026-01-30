@@ -1766,6 +1766,7 @@ source = { editable = "." }
 dependencies = [
     { name = "dotenv" },
     { name = "ipykernel" },
+    { name = "ipython" },
     { name = "ipywidgets" },
     { name = "jupyterlab" },
     { name = "langchain" },
@@ -1795,6 +1796,7 @@ dependencies = [
 requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "ipykernel", specifier = ">=7.1.0" },
+    { name = "ipython", specifier = ">=9.8.0" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
     { name = "jupyterlab", specifier = ">=4.5.1" },
     { name = "langchain", specifier = ">=1.1.3" },

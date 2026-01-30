@@ -1,6 +1,8 @@
 {
     "name": "lca-lc-foundations",
-    "image": "mcr.microsoft.com/devcontainers/python:3.13",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "workspaceFolder": "/workspaces/lca-lc-foundations",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/lca-lc-foundations,type=bind,consistency=cached",
     "customizations": {
